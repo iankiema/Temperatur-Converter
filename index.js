@@ -1,0 +1,24 @@
+const celciusEl = document.getElementById("celsius");
+const fahrenheitEl = document.getElementById("fahrenheit");
+const kelvinEl = document.getElementById("kelvin");
+
+function computeTemp(event){
+const currentValue = +event.target.value
+
+switch(event.target.name){
+  case "celsius":
+      kelvinEl.value = (currentValue + 273.32)
+      fahrenheitEl.value = (currentValue * 1.8 +32)
+      break;
+  case "fahrenheit":
+    celciusEl.value = ((currentValue - 32) / 1.8)
+    kelvinEl.value = ((currentValue - 32) / 1.8 + 273.32)
+      break;
+  case "kelvin":
+    celciusEl.value = (currentValue - 273.32)
+    fahrenheitEl.value = ((value - 273.32) * 1.8 + 32)
+      break;
+  default:
+    break;
+}
+}
