@@ -25,6 +25,8 @@ body{
 .container h1{
   font-weight: bolder;
   font-size: 30px;
+  text-align: center;
+  color: darkgreen;
 }
 
 .unit-container{
@@ -35,16 +37,22 @@ body{
   
 }
 
+.unit-container label{
+  font-size: 18px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
 .input-value{
  height: 25px;
  margin-top: 10px;
  outline: none;
- border: none;
- background-color: rgba(255, 255, 255, 0.3);
+ background-color: rgba(255, 255, 255, 0.5);
  width: 220px;
  border-color: rgba(255, 255, 255, .5);
  color: darkgreen;
  padding: 10px;
+ font-size: 18px;
  
 
 }
